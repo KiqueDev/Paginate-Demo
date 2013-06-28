@@ -1,0 +1,48 @@
+<head>
+  <title>Paginate-Demo</title>
+</head>
+
+<body>
+  <div class="container">
+    {{> myTemplate}}
+  </div>
+</body>
+
+
+<template name="myTemplate">
+  <div class='row'>
+    <article>
+      <h3>Paginate Sample</h3>
+
+      <table class='table table-bordered table-striped'>
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Location</th>
+          <th></th>
+        </tr>
+        </thead>
+        {{#if collection}}
+          {{#each collection}}
+          <tr>
+            <td class="span4">
+              {{name}}
+            </td>
+            <td class="span5">
+              {{location}}
+            </td>
+            <td class="span1">
+            <center><a class='btn btn-primary btn-small' href="">View</a></center>
+            </td>
+          </tr>
+          {{/each}}
+          {{/if}}
+      </table>
+    </article>
+
+  </div>
+  <div class="row">
+  {{> paginate_pages}}
+  </div>
+</template>
+

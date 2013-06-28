@@ -1,0 +1,10 @@
+{
+  "meteor": {
+    "branch": "master"
+  },
+  "packages": {
+    "paginate" : {
+    	"path" : "/Users/Kique/Desktop/Meteor-Paginate"
+    }
+  }
+}
