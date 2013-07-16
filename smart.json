@@ -3,6 +3,8 @@
     "branch": "master"
   },
   "packages": {
-    "paginate": {}
+    "paginate": {
+    	"path": "/Users/intern/Desktop/Meteor-Paginate"
+    }
   }
 }

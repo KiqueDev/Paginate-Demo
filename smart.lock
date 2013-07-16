@@ -2,13 +2,13 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "paginate": {}
+      "paginate": {
+        "path": "../Meteor-Paginate"
+      }
     },
     "packages": {
       "paginate": {
-        "git": "https://github.com/KiqueDev/Meteor-Paginate.git",
-        "tag": "v0.0.1",
-        "commit": "85e61ef1c05018b0b3609c209bb5fe90fb814acf"
+        "path": "../Meteor-Paginate"
       },
       "router": {
         "git": "https://github.com/tmeasday/meteor-router.git",

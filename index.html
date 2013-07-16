@@ -4,15 +4,15 @@
 
 <body>
   <div class="container-fluid">
-    {{> myTemplate}}
+    {{renderPage}} <!-- routed-page from Meteor Router Package-->
   </div>
 </body>
 
 
-<template name="myTemplate">
+<template name="peopleTemplate">
   <div class='row-fluid'>
     <article>
-      <h3>Paginate Sample</h3>
+      <h3>Paginate Sample People</h3>
 
       <table class='table table-bordered table-striped'>
         <thead>
@@ -22,14 +22,51 @@
           <th></th>
         </tr>
         </thead>
-        {{#if collection}}
-          {{#each collection}}
+        {{#if people}}
+          {{#each people}}
           <tr>
             <td class="span4">
               {{name}}
             </td>
             <td class="span5">
               {{location}}
+            </td>
+            <td class="span1">
+            <center><a class='btn btn-primary btn-small' href="">View</a></center>
+            </td>
+          </tr>
+          {{/each}}
+        {{/if}}
+      </table>
+    </article>
+
+  </div>
+  <div class="row-fluid">
+  {{> paginate_pages}}
+  </div>
+</template>
+
+<template name="animalTemplate">
+  <div class='row-fluid'>
+    <article>
+      <h3>Paginate Sample Animal</h3>
+
+      <table class='table table-bordered table-striped'>
+        <thead>
+        <tr>
+          <th>Animal Name</th>
+          <th>Size</th>
+          <th></th>
+        </tr>
+        </thead>
+        {{#if animals}}
+          {{#each animals}}
+          <tr>
+            <td class="span4">
+              {{name}}
+            </td>
+            <td class="span5">
+              {{size}}
             </td>
             <td class="span1">
             <center><a class='btn btn-primary btn-small' href="">View</a></center>
@@ -45,4 +82,3 @@
   {{> paginate_pages}}
   </div>
 </template>
-
