@@ -7,4 +7,4 @@ A Simple Sample Code using Meteor Package ---- "paginate"
 Check out the source code at https://github.com/KiqueDev/Meteor-Paginate
 
 
-Check out the <a href="https://paginate.meteor.com/p/1">Live Demo</a>
+Check out the <a href="https://paginate.meteor.com/">Live Demo</a>
