@@ -5,8 +5,8 @@ Animals = new Meteor.Collection("animals");
 
 if (Meteor.isClient) {
 
-  //SINGLE PAGINATE WITH ONE TEMPLATE
-  var animalPages = new Paginate(Animals, "animalTemplate", {perPage:2});
+  //SINGLE PAGINATE WITH ONE TEMPLATE WIT/h DEFAULT [OPTIONS]
+  var animalPages = new Paginate(Animals, "animalTemplate");
 
   //MULTIPLE PAGINATE WITH ONE TEMPLATE
   var childrenPages = new Paginate(Childrens, "peopleTemplate", {perPage:3, templateData:"people"});
